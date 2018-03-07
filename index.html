@@ -305,7 +305,7 @@
             }
 
             .exciting{
-                background-image: url("img/two_talking.jpg");
+                background-image: url("http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/two-talking.jpg");
                 height: 600px;
                 padding: 50px;
                 background-size: cover;
@@ -328,13 +328,11 @@
 
             .speaker{
                 margin-top: 10px;
+                cursor: pointer;
             }
 
-            .speaker img{
-                border: none!important;
-            }
-
-            .speaker .name{
+            .speaker .name,
+            .modal .name{
                 background: #f71111;
                 color: #fff;
                 padding: 10px;
@@ -343,7 +341,8 @@
 
             .speaker img{
                 max-width: 100%;
-                height: 150px;
+                height: auto;
+                border: none!important;
             }
 
             .sponsors img{
@@ -389,7 +388,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img alt="" src="http://www.blackactuaries.org/graphics/IABA-logo.png" style="width: 120px;">
                 </a>
             </div>
@@ -398,7 +397,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Register</a>
@@ -512,7 +511,9 @@
 
         <div class="exciting">
 
-
+            <div class="theme text-center" style="color: white; font-size: 35px; margin-top: 230px;">
+                <p>Real Opportunities At IABA Annual Meeting</p>
+            </div>
 
         </div>
 
@@ -545,133 +546,152 @@
 
                     <h2 class="title">2018 Speakers</h2>
 
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/bright.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 1</p>
-
+                    <div class="col-sm-4 speaker" data-toggle="modal" data-target="#keynote-speaker-1">
+                        <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/speakers/bright.jpg"/>
+                        <p class="name">Keynote Speaker 1, FSA, MAAA</p>
                     </div>
+                    <div class="modal fade" id="keynote-speaker-1"  data-backdrop="true" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Keynote Speaker | IABA 2018</h4>
+                                </div>
+                                <div class="modal-body">
 
-                    <div class="col-sm-2 speaker">
+                                    <div class="row">
 
-                        <img src="img/Chris_Cooper.jpeg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 2</p>
+                                        <div class="col-sm-4">
 
+                                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/speakers/bright.jpg" class="img-responsive"/>
+                                            <p class="name">Keynote Speaker 1, FSA, MAAA</p>
+
+                                        </div>
+                                        <div class="col-sm-8 text-left">
+
+                                            <p>
+                                                Speaker 1 is a Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Nam dolor massa, hendrerit non placerat quis, tincidunt nec leo.
+                                                Nunc nec iaculis sem. Praesent at porta orci, eget luctus magna.
+                                            </p>
+                                            <p>
+                                                Integer sagittis, lectus et sagittis mollis, magna dolor facilisis augue,
+                                                quis tristique enim urna eu eros. Etiam lobortis est eu neque luctus porta.
+                                                Quisque mattis sapien at cursus congue. Pellentesque eu cursus nulla.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <div class="col-sm-4 speaker"  data-target="#keynote-speaker-2" data-toggle="modal">
+                        <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/speakers/Chris_Cooper.png"/>
+                        <p class="name">Keynote Speaker 2</p>
                     </div>
+                    <div class="modal fade" id="keynote-speaker-2"  data-backdrop="true" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Keynote Speaker | IABA 2018</h4>
+                                </div>
+                                <div class="modal-body">
 
-                    <div class="col-sm-2 speaker">
+                                    <div class="row">
 
-                        <img src="img/Alida.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 3</p>
+                                        <div class="col-sm-4">
 
+                                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/speakers/Chris_Cooper.png" class="img-responsive"/>
+                                            <p class="name">Keynote Speaker 2, FSA, MAAA</p>
+
+                                        </div>
+                                        <div class="col-sm-8 text-left">
+
+                                            <p>
+                                                Speaker 2 is a Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Nam dolor massa, hendrerit non placerat quis, tincidunt nec leo.
+                                                Nunc nec iaculis sem. Praesent at porta orci, eget luctus magna.
+                                            </p>
+                                            <p>
+                                                Integer sagittis, lectus et sagittis mollis, magna dolor facilisis augue,
+                                                quis tristique enim urna eu eros. Etiam lobortis est eu neque luctus porta.
+                                                Quisque mattis sapien at cursus congue. Pellentesque eu cursus nulla.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <div class="col-sm-4 speaker"  data-target="#mc" data-toggle="modal">
+                        <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/speakers/Alida.png"/>
+                        <p class="name">MC</p>
                     </div>
+                    <div class="modal fade" id="mc"  data-backdrop="true" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">MC | IABA 2018</h4>
+                                </div>
+                                <div class="modal-body">
 
-                    <div class="col-sm-2 speaker">
+                                    <div class="row">
 
-                        <img src="img/bright.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 1</p>
+                                        <div class="col-sm-4">
 
-                    </div>
+                                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/speakers/Alida.png" class="img-responsive"/>
+                                            <p class="name">MC, FSA, MAAA</p>
 
-                    <div class="col-sm-2 speaker">
+                                        </div>
+                                        <div class="col-sm-8 text-left">
 
-                        <img src="img/Chris_Cooper.jpeg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 2</p>
+                                            <p>
+                                                MC is a Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Nam dolor massa, hendrerit non placerat quis, tincidunt nec leo.
+                                                Nunc nec iaculis sem. Praesent at porta orci, eget luctus magna.
+                                            </p>
+                                            <p>
+                                                Integer sagittis, lectus et sagittis mollis, magna dolor facilisis augue,
+                                                quis tristique enim urna eu eros. Etiam lobortis est eu neque luctus porta.
+                                                Quisque mattis sapien at cursus congue. Pellentesque eu cursus nulla.
+                                            </p>
 
-                    </div>
+                                        </div>
 
-                    <div class="col-sm-2 speaker">
+                                    </div>
 
-                        <img src="img/Alida.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 3</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/bright.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 1</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/Chris_Cooper.jpeg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 2</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/Alida.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 3</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/bright.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 1</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/Chris_Cooper.jpeg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 2</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/Alida.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 3</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/bright.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 1</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/Chris_Cooper.jpeg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 2</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/Alida.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 3</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/bright.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 1</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/Chris_Cooper.jpeg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 2</p>
-
-                    </div>
-
-                    <div class="col-sm-2 speaker">
-
-                        <img src="img/Alida.jpg" class="img-responsive img-thumbnail"/>
-                        <p class="name">Speaker 3</p>
-
-                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
 
                 </div>
+                <div style="margin-top: 40px">
+                    <a class="btn btn-primary" href="speakers.html">
+                        See all speakers
+                    </a>
+                </div>
+
+                <hr>
 
             </div>
 
@@ -685,14 +705,14 @@
 
                     <div class="logos" style="margin-top: 25px; text-align: center">
                         <marquee>
-                            <img src="img/soa.jpg" style="max-height: 50px;" class="img img-rounded"/>
-                            <img src="img/cigna.jpg" style="max-height: 50px;" class="img img-rounded"/>
-                            <img src="img/metlife-logo.jpg" style="max-height: 50px;" class="img img-rounded"/>
-                            <img src="img/cna.gif" style="max-height: 50px;" class="img img-rounded"/>
-                            <img src="img/libertymutual.gif" style="max-height: 50px;" class="img img-rounded"/>
-                            <img src="img/segalgroup.jpg" style="max-height: 50px;" class="img img-rounded"/>
-                            <img src="img/transamerica.jpg" style="max-height: 50px;" class="img img-rounded"/>
-                            <img src="img/scor.png" style="max-height: 50px;" class="img img-rounded"/>
+                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/soa.jpg" style="max-height: 50px;" class="img img-rounded"/>
+                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/cigna.jpg" style="max-height: 50px;" class="img img-rounded"/>
+                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/metlife-logo.jpg" style="max-height: 50px;" class="img img-rounded"/>
+                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/cna.gif" style="max-height: 50px;" class="img img-rounded"/>
+                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/libertymutual.gif" style="max-height: 50px;" class="img img-rounded"/>
+                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/segalgroup.jpg" style="max-height: 50px;" class="img img-rounded"/>
+                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/transamerica.jpg" style="max-height: 50px;" class="img img-rounded"/>
+                            <img src="http://www.blackactuaries.org/resource/resmgr/images/microsite/2018/scor.png" style="max-height: 50px;" class="img img-rounded"/>
                         </marquee>
                     </div>
 
